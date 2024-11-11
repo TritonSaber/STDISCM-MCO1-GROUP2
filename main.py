@@ -110,7 +110,7 @@ def scrape_pages(urls):
     threads = []
 
     for url in urls:
-        thread = threading.Thread(target=save_data_from_thread, args=(url,))
+        thread = threading.Thread(target=scrape_page, args=(url,))
         threads.append(thread)
         thread.start()
 
@@ -124,25 +124,44 @@ def scrape_pages(urls):
         else:
             print(f"{url}: Failed to scrape or skipped")
 
-    save_to_csv()
+#    save_to_csv()
 
-def save_data_from_thread(url):
-    faculty_info = fetch_emails(url)
+#def save_data_from_thread(url):
+#    faculty_info = fetch_emails(url)
+#
+#    # Ensure thread-safe appending of data
+#    with data_lock:
+#        all_faculty_info.extend(faculty_info)
 
-    # Ensure thread-safe appending of data
-    with data_lock:
-        all_faculty_info.extend(faculty_info)
-
-def save_to_csv():
+#def save_to_csv():
     # Convert collected data to a DataFrame and save it to a CSV file
-    if all_faculty_info:
-        df = pd.DataFrame(all_faculty_info)
-        df.to_csv('dlsu_emails.csv', index=False, encoding='utf-8')
-        print("Data saved to 'dlsu_emails.csv'")
+#    if all_faculty_info:
+#        df = pd.DataFrame(all_faculty_info)
+#        df.to_csv('dlsu_emails.csv', index=False, encoding='utf-8')
+#        print("Data saved to 'dlsu_emails.csv'")
+#    else:
+#        print("No data to save.")
+
+def scrape_page(url):
+    # Scrape the page and fetch emails
+    email_data = fetch_emails(url)
+    
+    # Write data to text file in CSV format
+    if email_data:
+        with open('faculty_emails.txt', 'a', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=['Name', 'Role', 'Email', 'Source'])
+            
+            # Write the header if the file is empty
+            if f.tell() == 0:
+                writer.writeheader()
+                
+            # Write the rows
+            for row in email_data:
+                writer.writerow(row)
+
+        print(f"Data for {url} saved.")
     else:
-        print("No data to save.")
-
-
+        print(f"No data found for {url}.")
 
 if __name__ == '__main__':
     phase = 2 #1 for manual, 2 for threads kind of
