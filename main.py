@@ -20,11 +20,6 @@ statistics = {}
 
 seen_emails = set()
 
-# Functionalities to be done:
-# Thread/Process Used
-# Input arguments: URL of website, and Minutes given for scraping
-# Output: Text file with email and associated name, offic, dep, OR unit in CSV format; Text file containing statistics of website: URL, num of pages scraped and num of email addr found
-
 # Remember to delete the faculty_emails.txt cause itll append forever and idk how to refresh it without breaking. Statistics file is good though
 
 def decodeEmail(e):
@@ -68,7 +63,7 @@ def fetch_emails(url, start_time, time_limit):
         # Searching in wpb_wrapper, in faculty profile that each entry has
         for div in soup.find_all('div', class_="wpb_wrapper"):
             
-            if 'faculty-profile' in url:
+            if 'faculty-profile' in url or 'faculty' in url:
                 name_tag = div.find('strong')
             else:
                 name_tag = soup.find('h1')
@@ -88,7 +83,7 @@ def fetch_emails(url, start_time, time_limit):
                     break  # Stop after decoding
 
             # For Role Column
-            if role_tag and 'faculty-profile' in url:
+            if role_tag and 'faculty-profile' in url or role_tag and 'faculty' in url:
                 for a_tag in role_tag.find_all('a'):
                     a_tag.decompose()  # Remove <a> tag 
                 for strong_tag in role_tag.find_all('strong'):
@@ -120,7 +115,7 @@ def fetch_emails(url, start_time, time_limit):
             statistics[url]['Emails Found'] += emails_found
         else:
             statistics[url] = {
-                'Pages Scraped': 1,  # First page visit for this URL #cause we're still manually putting urls in and not traversing them atm
+                'Pages Scraped': 1,  # First page visit for this URL/cause we're still manually putting urls in and not traversing them atm
                 'Emails Found': emails_found
             }
 
@@ -253,17 +248,18 @@ def get_internal_links(url, visited=None, depth=0, max_depth=10): #3 does not re
 
 if __name__ == '__main__':
     time_limit = int(input("Enter the maximum number of minutes the program can run: "))
+    base_url = input("Enter the base URL to start scraping from: ")
     start_time_total = time.time()
-    phase = 2 #1 for manual(outdated kinda), 2 for threads kind of, 3 for automatic crawling: Also these are all hardcoded, so dev tests- make sure to set to right phase when passing
+    phase = 2 #1 for manual(outdated), 2 for threads kind of, 3 for automatic crawling: Also these are all hardcoded, so dev tests- make sure to set to right phase when passing
     if phase == 1:
-        url = 'https://www.dlsu.edu.ph/'
-        test_url = 'https://www.dlsu.edu.ph/research/offices/urco/'
+        #url = 'https://www.dlsu.edu.ph/'
+        #test_url = 'https://www.dlsu.edu.ph/research/offices/urco/'
         try:
-            response = http.get(test_url, timeout=10)
+            response = http.get(base_url, timeout=10)
             response.raise_for_status()
             print("Connection Success")
             print("Attempting to fetch...")
-            email_df = fetch_emails(test_url)
+            email_df = fetch_emails(base_url)
             print(email_df)
             if email_df is not None:
                 if not email_df.empty:
@@ -281,14 +277,16 @@ if __name__ == '__main__':
         #'https://www.dlsu.edu.ph/',
         'https://www.dlsu.edu.ph/research/offices/urco/',
         'https://www.dlsu.edu.ph/offices/registrar/',
-        'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/',
+        'https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/',
+        #'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/', 
+        base_url,
         # Add more URLs here
         ]
         scrape_pages(urls_to_scrape, time_limit)
 
     if phase == 3:
         #base_url = 'https://www.dlsu.edu.ph/'
-        base_url = 'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/'
+        #base_url = 'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/'
         urls_to_scrape = get_internal_links(base_url)
         scrape_pages(urls_to_scrape, time_limit)
 

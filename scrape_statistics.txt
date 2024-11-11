@@ -1,25 +1,31 @@
 Scrape Statistics
 ====================
-URL: https://www.dlsu.edu.ph/research/offices/urco/
-  Pages Scraped: 1
-  Emails Found: 1
-  Time Taken: 0.36 seconds
-====================
-Overall Statistics:
 URL: https://www.dlsu.edu.ph/offices/registrar/
   Pages Scraped: 1
   Emails Found: 1
   Time Taken: 0.44 seconds
 ====================
 Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/offices/urco/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 0.51 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+  Pages Scraped: 1
+  Emails Found: 26
+  Time Taken: 0.58 seconds
+====================
+Overall Statistics:
 URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/
   Pages Scraped: 1
   Emails Found: 30
-  Time Taken: 0.57 seconds
+  Time Taken: 0.65 seconds
 ====================
 Overall Statistics:
-Total Pages Scraped: 3
-Total Emails Found: 32
-Total Time Elapsed: 0.58 seconds
-Remaining Time: 59.42 seconds
-Threads Used: 3
+Total Pages Scraped: 4
+Total Emails Found: 58
+Total Time Elapsed: 0.65 seconds
+Remaining Time: 59.35 seconds
+Threads Used: 4

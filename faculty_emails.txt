@@ -1,6 +1,32 @@
 Name,Role,Email,Source
-RESEARCH AND GRANTS MANAGEMENT OFFICE,Not applicable,universityresearchcoordinationoffice@dlsu.edu.ph,https://www.dlsu.edu.ph/research/offices/urco/
 Registrar,Not applicable,registrar@dlsu.edu.ph,https://www.dlsu.edu.ph/offices/registrar/
+RESEARCH AND GRANTS MANAGEMENT OFFICE,Not applicable,universityresearchcoordinationoffice@dlsu.edu.ph,https://www.dlsu.edu.ph/research/offices/urco/
+Dr. Katrina Paola Alvarez,,katrina.alvarez@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Dr. Jan Michael Alexandre Bernadas,Associate Professor,jan.bernadas@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Dr. Jason Vincent Cabañes,Full Professor,jason.cabanes@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Dr. Clodualdo del Mundo Jr.,Professor Emeritus,clodualdo.delmundo@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Dr. Maria Angeli Diaz,Associate Professor,maria.angeli.diaz@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Dr. Bruno Lovric,Associate Professor,bruno.lovric@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Dr. Consuelo Angela Santos,Assistant Professor,consuelo.santos@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Dr. Cheryll Ruth Soriano,Full Professor,cheryll.soriano@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Dr. Norman Zafra,Associate Professor,norman.zafra@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Mr. Ryanorlie Abeledo,Professional Lecturer,ryanorlie.abeledo@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Ms. Maysa Arabit,Assistant Professorial Lecturer,maysa.arabit@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Mr. Eleazar Del Rosario,Professional Lecturer,eleazar.delrosario@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Mr. Jimmy Domingo,Assistant Professorial Lecturer,jimmy.domingo@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Mr. Carlo Magno Figueroa,Professional Lecturer,carlo.figueroa@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Mr. Edward Cabagnot,Lecturer,edward.cabagnot@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Mr. Martin Christian Cabrera,Professional Lecturer,martin.cabrera@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Mr. Vincent Oliver Cheng,Professional Lecturer,vincent.cheng@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Ms. Rica Leticia Arevalo,Assistant Professorial Lecturer,rica.arevalo@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Mr. Kristoffer Brugada,Professional Lecturer,kristoffer.brugada@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Ms. Jacqueline Lourdes Buenafe,Lecturer,jacqueline.buenafe@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Ms. Karol Anne Ilagan,Professional Lecturer,karol.ilagan@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Ms. Marie Luz Mamawal,Professional Lecturer,marie.mamawal@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Mr. Erwin Lemuel Oliva,Assistant Professorial Lecturer,erwin.oliva@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Mr. Jose Javier Reyes,Senior Professional Lecturer,jose.j.reyes@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Mr. Joaquin Miguel Ruiz,Assistant Professorial Lecturer,joaquin.ruiz@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+Ms. Eva Mari Salvador,Assistant Professorial Lecturer,eva.salvador@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
 Ms. Dionessa Bustamante,Associate Lecturer,dionessa.bustamante@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/
 Dr. Eric Vincent Batalla,Full Professor,eric.batalla@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/
 Dr. Anthony Lawrence Borja,Associate Professor,anthony.borja@dlsu.edu.ph,https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/

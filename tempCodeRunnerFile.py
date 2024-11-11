@@ -1,1 +1,1 @@
-start_time_total = time.time()
+https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/
