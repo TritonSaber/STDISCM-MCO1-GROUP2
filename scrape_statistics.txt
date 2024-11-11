@@ -1,31 +1,1310 @@
 Scrape Statistics
 ====================
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/ador-r-torneo/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.14 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#22414e474d0c41434e4b4f40434a4b4c62464e51570c4746570c524a
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.16 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#46272229346832293428232906222a35336823223368362e
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.18 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#dab6b5a8bfb4a0b5f4aebbb4bbbebb9abeb6a9aff4bfbeaff4aab2
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.20 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#dca8b3acb5b2f2aea9b5a69cb8b0afa9f2b9b8a9f2acb4
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.21 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#36555a5340531857445143535a5a534576525a45431853524318465e
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.22 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#bbc9d4d5dad7df95d3d4d7d6dec8fbdfd7c8ce95dedfce95cbd3
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.22 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#d4a7a1a7b5bafabfa1a6b0b8bdfab0b8a7a1fab1b0a1faa4bc
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.23 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#8cebe0ede8fff8e3e2e9a2eff9edfef8e9fee3ffcce8e0fff9a2e9e8f9a2fce4
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.24 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/wp-content/plugins/teachpress/includes/academicons/css/academicons.min.css?ver=4.9.8
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.25 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.12
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.25 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#93f6e1faf0bdf1f2e7f2fffff2d3f7ffe0e6bdf6f7e6bde3fb
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.25 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#02746b61766d706b6d2c6e6d70676c786d42666e71772c6766772c726a
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.28 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#ee8d8b8d8782878fc08487838b808b94c38a8f838f9c97ae8a829d9bc08b8a9bc09e86
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.28 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#791e1c0b180b1d16571c0c0a1c1b1016391d150a0c571c1d0c570911
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.29 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#197d7076777c6a6a78377b6c6a6d787478776d7c597d756a6c377c7d6c376971
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.30 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#d4b9b5a6bdb1fab3bda6b5b0bb94b0b8a7a1fab1b0a1faa4bc
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.30 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#3644575a465e185b5944575a534576525a45431853524318465e
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.33 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#375a56455e56195a5e5b5650455844195b585a5843565977535b44421952534219475f
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.34 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#234e420d474a554a4d420d514c4f47424d63474f50560d4647560d534b
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.36 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#64050808010a4a171116080524000817114a0100114a140c
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.36 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#f785988496d994969b9e9b829990b7939b8482d9929382d9879f
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.36 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#66350e0314110f08480908072602030a0715070a0a0348160e
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.37 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/terms
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.38 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#1266777e7b707760663c7e737d7152767e61673c7776673c627a
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.39 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#02686d7167726a2c74676e6371616d42666e71772c6766772c726a
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.39 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/history-and-traditions
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.39 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#741206151a171d07171b5a1915131a1b34101807015a1110015a041c
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.40 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#3c5d524853525553124c59584e537c58504f4912595849124c54
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.40 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/wp-content/plugins/teachpress/styles/teachpress_front.css?ver=7.1.1
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.40 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#472c263522296920282a223d6a23322a372e3307232b34326922233269372f
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.41 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#cea3afbabaa6abb9e0a1bcaaa1a0abb48eaaa2bdbbe0abaabbe0bea6
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.41 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#84e5eaf0ecebeafdaae6ebf6eee5c4e0e8f7f1aae1e0f1aaf4ec
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.41 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#214b404f4842400f4c4046405561454d52540f4445540f5149
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.42 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#640100130d0a4a17050a100d05030b24000817114a0100114a140c
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.42 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/cdn-cgi/l/email-protection#56353e243f25223f373838337835393a3a373822332516323a25237833322378263e
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.43 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/rvrcob/academic-departments/management-financial-institutions/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.52 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/emeriti/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.52 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/faculty-awardees/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.60 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/organizational-chart/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.60 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/southgate
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.60 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/filipino/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.63 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/student-organizations/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.79 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/student-governance/
+  Pages Scraped: 1
+  Emails Found: 2
+  Time Taken: 0.89 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/hub/cav-ched-requests/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 0.92 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/ovperi/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.02 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/bagced/academic-departments/counseling-educational-psychology/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.10 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/lider/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.20 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/gerardo-v-eusebio/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 1.23 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cos/departments/mathematics/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.23 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/rvrcob/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 1.36 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cos/departments/physics/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.36 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cos/departments/biology/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.37 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/southeast-asia-research-center-and-hub/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 1.37 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/ovperi/sep/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.48 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/office-of-the-dean/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.54 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/bagced/academic-departments/english-applied-linguistics
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.64 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/bagced/academic-departments/educational-leadership-management/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.67 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/university-fellows/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.69 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/osa/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.70 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/matthew-ordonez/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 1.77 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/conferences/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 1.89 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/research-centers-cla/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 2.27 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 2.34 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/tala/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 2.38 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dlsu.edu.ph%2Fcolleges%2Fcla%2Facademic-departments%2Fpolitical-science%2Ffaculty-profile%2F
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 2.40 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/cbrd
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 2.50 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/industrial-engineering/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 2.56 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/ccs/academic-departments/computer-technology/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 2.65 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/president/aaro/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 2.69 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/wp-json/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 2.70 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/offices/reo/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 2.79 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/theology-religious-education/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 2.82 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/registrar/cost-of-studies/request-for-documents/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 2.86 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/bnscwc/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 3.07 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/smqa/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 3.08 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/students/international
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 3.10 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/janica-de-chaves-magat/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 3.14 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/international-studies/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 3.32 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/contact-us-2
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 3.36 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/allen-b-surla/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 3.41 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/about-dlsu/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 3.43 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/electronics-communications-engineering/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 3.48 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 3.59 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/cleve-kevin-robert-v-arguelles/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 3.65 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/sdrc/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 3.71 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cos/departments/chemistry/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 3.71 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 3.74 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/wp-includes/wlwmanifest.xml
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 3.90 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/about-dlsu
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 3.97 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/admissions/graduate/graduate-viewbooks/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 3.99 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/history/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 4.14 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/integrated-school
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 4.18 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/adric/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 4.21 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/give
+  Pages Scraped: 1
+  Emails Found: 3
+  Time Taken: 4.36 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/publications/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 4.41 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 4.52 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/christianne-france-collantes/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 4.53 seconds
+====================
+Overall Statistics:
 URL: https://www.dlsu.edu.ph/offices/registrar/
   Pages Scraped: 1
   Emails Found: 1
-  Time Taken: 0.44 seconds
+  Time Taken: 4.57 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/hub/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 4.59 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/integrated-school/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 4.70 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/featured-research-and-events/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 4.72 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/shs-research-congress/%20
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 4.97 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/anthony-lawrence-a-borja/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 5.00 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/rvrcob/academic-departments/management-organization-department/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.01 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/inside/vision-mission
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.11 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/marie-bembie-a-girado/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.17 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.18 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dlsu.edu.ph%2Fcolleges%2Fcla%2Facademic-departments%2Fpolitical-science%2Ffaculty-profile%2F&format=xml
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.23 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/maria-milagros-regina-i-lomotan/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 5.25 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/mechanical-engineering/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.31 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/safe-space-act-ra11313/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.39 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/rvrcob/academic-departments/commercial-law/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.44 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/lasallianmission/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.49 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/susan-reyes-kurdli/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.50 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/ibeht/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.52 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.53 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/org-chart/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.55 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/campuses/rufino
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.55 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research-1/centers/shore/coenomap/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.65 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.68 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/yuchengco-center/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.69 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/bagced/academic-departments/science-education
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.70 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/students/international/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.77 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-manual
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.78 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/rvrcob/academic-departments/accountancy/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.79 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cos/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 5.96 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/mission-vision/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.07 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/brothers/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.12 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/psychology/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.12 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/topin-sto-doming-ruiz/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 6.16 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.17 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/guiding-principles
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.21 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/research-support-for-graduate-students/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.21 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/ccs/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 6.31 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/historical-background/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.32 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/administrators-and-staff/
+  Pages Scraped: 1
+  Emails Found: 5
+  Time Taken: 6.33 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/inside/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.61 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/offices/dito/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.63 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/comments/feed/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.87 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/admissions/%20
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.91 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/ccs/academic-departments/information-technology/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 6.94 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/
+  Pages Scraped: 1
+  Emails Found: 21
+  Time Taken: 6.96 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/admissions
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.13 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/ma-divina-gracia-z-roldan/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.14 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/joseph-c-velasco/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.14 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/bituin/hr/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.25 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/university-governance
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.31 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/feed/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.31 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/cla100/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.40 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/students/services/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.40 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/behavioral-sciences/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.46 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/faculty/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.57 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/rvrcob/academic-departments/dsi/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.57 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/admissions/scholarships/%20
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.77 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/graduate-degree-programs/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 7.81 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/campuses/manila
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 7.89 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/soll/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 7.92 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/i-viewbook
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 8.06 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/gcoe/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 8.15 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/campus-map
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 8.15 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/admissions/scholarships/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 8.29 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/philosophy/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 8.30 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/Privacy
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 8.33 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/campuses/makati
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 8.42 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/administration/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 8.43 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/registrar/document_request/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 8.54 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/publishing-house/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 8.77 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/soe/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 8.80 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 8.88 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/president/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 8.96 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/ronald-d-holmes/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 9.03 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/library
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 9.29 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/censer/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 9.42 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/sherwin-e-ona/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 9.42 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/staff-directory/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 9.42 seconds
 ====================
 Overall Statistics:
 URL: https://www.dlsu.edu.ph/research/offices/urco/
   Pages Scraped: 1
   Emails Found: 1
-  Time Taken: 0.51 seconds
+  Time Taken: 9.55 seconds
 ====================
 Overall Statistics:
-URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/
+URL: https://www.dlsu.edu.ph/jobs
   Pages Scraped: 1
-  Emails Found: 26
-  Time Taken: 0.58 seconds
+  Emails Found: 0
+  Time Taken: 9.59 seconds
 ====================
 Overall Statistics:
-URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/literature/
   Pages Scraped: 1
-  Emails Found: 30
-  Time Taken: 0.65 seconds
+  Emails Found: 0
+  Time Taken: 9.64 seconds
 ====================
 Overall Statistics:
-Total Pages Scraped: 4
-Total Emails Found: 58
-Total Time Elapsed: 0.65 seconds
-Remaining Time: 59.35 seconds
-Threads Used: 4
+URL: https://www.dlsu.edu.ph/colleges/bagced/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 9.65 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/rvrcob/academic-departments/marketing-management/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 9.70 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/laguna-campus
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 9.73 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/admissions/graduate/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 9.95 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 9.96 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/downloads/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 9.98 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/ovperi/international-short-courses/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.05 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/ccs/academic-departments/software-technology/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.10 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/campuses
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.17 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/jobs/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.23 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/about-dlsu/ourcorevalues/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.24 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/manufacturing-engineering-management/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.62 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/offices/registrar/academic-calendar/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.72 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/journals
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.80 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/civil-engineering/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.88 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/cleo-anne-a-calimbahin/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.90 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/cesdr/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 10.92 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/gcoe/academic-departments/chemical-engineering/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.95 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/admissions/undergraduate/degree-programs/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 10.99 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/students/cso/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 11.02 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/?p=34365
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 11.03 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/edwin-p-santiago/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 11.05 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/give/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 11.19 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/admissions/undergraduate/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 11.40 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/academic-programs/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 11.41 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/students
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 11.62 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 11.66 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/bagced/academic-departments/physical-education
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 11.66 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/inside/board-advisors/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 11.69 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/eric-vincent-batalla/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 11.93 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/offices/dipo/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 11.97 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/research-centers/shore/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 11.98 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/tdsol/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 12.02 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/accessibility
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 12.12 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/integratedschool-test/senior-high-school/
+  Pages Scraped: 1
+  Emails Found: 2
+  Time Taken: 12.36 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/research/abstracts/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 13.05 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/colleges/cla/undergraduate-degree-programs/
+  Pages Scraped: 1
+  Emails Found: 0
+  Time Taken: 13.15 seconds
+====================
+Overall Statistics:
+URL: https://www.dlsu.edu.ph/admissions/graduate/degree-programs/
+  Pages Scraped: 1
+  Emails Found: 1
+  Time Taken: 13.34 seconds
+====================
+Overall Statistics:
+Base URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/
+Total Pages Scraped: 217
+Total Emails Found: 66
+Total Time Elapsed: 13.97 seconds
+Remaining Time: 46.03 seconds
+Threads Used: 223

@@ -201,14 +201,14 @@ def write_statistics_to_file():
 
             f.write("====================\n")
             f.write("Overall Statistics:\n")
-        #f.write(f"Base URL: {base_url}\n")
+        f.write(f"Base URL: {base_url}\n")
         f.write(f"Total Pages Scraped: {total_pages}\n")
         f.write(f"Total Emails Found: {total_emails}\n")
         f.write(f"Total Time Elapsed: {total_time_elapsed:.2f} seconds\n")
         f.write(f"Remaining Time: {remaining_time:.2f} seconds\n")
         f.write(f"Threads Used: {len(thread_times)}\n")
 
-def get_internal_links(url, visited=None, depth=0, max_depth=10): #3 does not reach yet, 5, 10... kinda hard
+def get_internal_links(url, visited=None, depth=0, max_depth=10): #3 stops at 13 seconds, 5, 10... tooo, kinda hard, even 100...
     if visited is None:
         visited=set()
 
@@ -249,8 +249,11 @@ def get_internal_links(url, visited=None, depth=0, max_depth=10): #3 does not re
 if __name__ == '__main__':
     time_limit = int(input("Enter the maximum number of minutes the program can run: "))
     base_url = input("Enter the base URL to start scraping from: ")
+    phase = int(input("Enter to use either scrape a set + your url (2), or search scrape (3): "))
     start_time_total = time.time()
-    phase = 2 #1 for manual(outdated), 2 for threads kind of, 3 for automatic crawling: Also these are all hardcoded, so dev tests- make sure to set to right phase when passing
+    #phase = 2 #1 for manual(outdated), 2 for threads kind of, 3 for automatic crawling: Also these are all hardcoded, so dev tests- make sure to set to right phase when passing
+    
+    #I should remove this but keeping this for posterity- single search scrape for testing.
     if phase == 1:
         #url = 'https://www.dlsu.edu.ph/'
         #test_url = 'https://www.dlsu.edu.ph/research/offices/urco/'
@@ -280,7 +283,7 @@ if __name__ == '__main__':
         'https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/',
         #'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/', 
         base_url,
-        # Add more URLs here
+        # Add more URLs here if want
         ]
         scrape_pages(urls_to_scrape, time_limit)
 
