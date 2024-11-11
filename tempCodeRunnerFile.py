@@ -1,1 +1,1 @@
-and email_text 
+start_time_total = time.time()

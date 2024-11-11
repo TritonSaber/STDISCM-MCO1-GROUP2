@@ -17,12 +17,14 @@ all_faculty_info = []
 thread_times = {}
 statistics = {}
 
+seen_emails = set()
+
 # Functionalities to be done:
 # Thread/Process Used
 # Input arguments: URL of website, and Minutes given for scraping
 # Output: Text file with email and associated name, offic, dep, OR unit in CSV format; Text file containing statistics of website: URL, num of pages scraped and num of email addr found
 
-# Remember to close the csv file when saving/running
+# Remember to delete the faculty_emails.txt cause itll append forever and idk how to refresh it without breaking. Statistics file is good though
 
 def decodeEmail(e):
     #https://stackoverflow.com/questions/36911296/scraping-of-protected-email cause cloudfare cool
@@ -34,8 +36,13 @@ def decodeEmail(e):
 
     return de
 
-def fetch_emails(url):
-    start_time = time.time()
+def fetch_emails(url, start_time, time_limit):
+    #Check for time
+    elapsed_time = time.time() - start_time
+    if elapsed_time > time_limit * 60:
+        print("Time limit exceeded, stopping the scraping.")
+        return [], True  # Return True to indicate time limit exceeded
+
     emails_found = 0
     # Email pattern
     #email_pattern = re.compile(r'[a-zA-Z0-9_.+-]+@dlsu.edu.ph')
@@ -50,7 +57,6 @@ def fetch_emails(url):
         
         # Set to store emails found
         faculty_info = []
-        seen_emails = set()
 
         # Searching in wpb_wrapper, in faculty profile that each entry has
         for div in soup.find_all('div', class_="wpb_wrapper"):
@@ -107,18 +113,21 @@ def fetch_emails(url):
             'Emails Found': emails_found
         }
 
-        return faculty_info
+        return faculty_info, False
     else:
         print("Failed to retrieve the webpage.")
         thread_times[url] = None
-        return None
+        return None, False
 
 # Function to scrape multiple pages concurrently (IDK YET)
-def scrape_pages(urls):
+def scrape_pages(urls, time_limit):
     threads = []
 
+    # Get the start time to monitor elapsed time
+    start_time = time.time()
+
     for url in urls:
-        thread = threading.Thread(target=scrape_page, args=(url,))
+        thread = threading.Thread(target=scrape_page, args=(url, start_time, time_limit))
         threads.append(thread)
         thread.start()
 
@@ -152,10 +161,14 @@ def scrape_pages(urls):
 #    else:
 #        print("No data to save.")
 
-def scrape_page(url):
+def scrape_page(url, start_time, time_limit):
     # Scrape the page and fetch emails
-    email_data = fetch_emails(url)
+    email_data, time_exceeded = fetch_emails(url, start_time, time_limit)
     
+    #if time limit exceeded, no more scraping
+    if time_exceeded:
+        return
+
     # Write data to text file in CSV format
     if email_data:
         with open('faculty_emails.txt', 'a', newline='', encoding='utf-8') as f:
@@ -175,6 +188,10 @@ def scrape_page(url):
 
 # Function to write statistics to a text file
 def write_statistics_to_file():
+    total_time_elapsed = time.time() - start_time_total
+    remaining_time = (time_limit * 60) - total_time_elapsed
+    remaining_time = max(remaining_time, 0)  # Avoid negative remaining time
+
     with open('scrape_statistics.txt', 'w', encoding='utf-8') as f:
         f.write("Scrape Statistics\n")
         f.write("====================\n")
@@ -182,10 +199,22 @@ def write_statistics_to_file():
             f.write(f"URL: {url}\n")
             f.write(f"  Pages Scraped: {stats['Pages Scraped']}\n")
             f.write(f"  Emails Found: {stats['Emails Found']}\n")
+
+            if url in thread_times:
+                duration = thread_times[url]
+                f.write(f"  Time Taken: {duration:.2f} seconds\n")
+            else:
+                f.write(f"  Time Taken: Failed to scrape or skipped\n")
+
             f.write("====================\n")
+        f.write(f"Total Time Elapsed: {total_time_elapsed:.2f} seconds\n")
+        f.write(f"Remaining Time: {remaining_time:.2f} seconds\n")
+        f.write(f"Threads Used: {len(thread_times)}\n")
 
 
 if __name__ == '__main__':
+    time_limit = int(input("Enter the maximum number of minutes the program can run: "))
+    start_time_total = time.time()
     phase = 2 #1 for manual(outdated kinda), 2 for threads kind of
     if phase == 1:
         url = 'https://www.dlsu.edu.ph/'
@@ -216,5 +245,5 @@ if __name__ == '__main__':
         'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/',
         # Add more URLs here
         ]
-        scrape_pages(urls_to_scrape)
+        scrape_pages(urls_to_scrape, time_limit)
 
