@@ -28,10 +28,10 @@ def decodeEmail(e):
 
 def fetch_emails(url):
     # Compile the email pattern
-    #email_pattern = re.compile(r'[a-zA-Z0-9_.+-]+@dlsu.edu.ph')
+    email_pattern = re.compile(r'[a-zA-Z0-9_.+-]+@dlsu.edu.ph')
     #email_pattern = re.compile(r'^[a-zA-Z0-9_.-]*[@](dlsu.edu.ph)')
     #email_pattern = re.compile(r'[a-zA-Z0-9_.+-]+@dlsu\.edu\.ph')
-    email_pattern = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}') #just getting whatever email in the page
+    #email_pattern = re.compile(r'[A-Za-z0-9._%+-]+@dlsu.edu.ph') #just getting whatever email in the page
     # Send a GET request to the URL
     response = http.get(url)
 
@@ -54,9 +54,7 @@ def fetch_emails(url):
             name_tag = div.find('strong')
             role_tag = div.find('p')
             email_tag = div.find('a', href=True) 
-
             name_text = name_tag.get_text(strip=True) if name_tag else None
-            role_text = role_tag.get_text(strip=True).replace(name_text, '').strip('" ') if role_tag and name_tag else None
             
 
             if email_tag:
@@ -66,8 +64,16 @@ def fetch_emails(url):
                     email_text = decodeEmail(encoded_email)
                 elif href.startswith('mailto:'):
                     email_text = href[7:]  # Extract email after 'mailto:'
-                else:
-                    email_text = None
+
+            # Now remove the email embedded in the role text if it exists
+            if role_tag:
+                # Remove the <a> tag to exclude it from role_text
+                for a_tag in role_tag.find_all('a'):
+                    a_tag.decompose()  # Remove the <a> tag completely
+                for strong_tag in role_tag.find_all('strong'):
+                    strong_tag.decompose()
+                # Now get the role text without any <a> tags
+                role_text = role_tag.get_text(strip=True)
 
             if name_text and email_text not in seen_emails:
                 faculty_info.append({
@@ -76,26 +82,6 @@ def fetch_emails(url):
                     'Email': email_text
                 })
                 seen_emails.add(email_text)
-
-            #if href.startswith('/cdn-cgi/l/email-protection'):
-            ##    encoded_email = href.split('#')[-1]  # Get the encoded part after '#'
-            #   decoded_email = decodeEmail(encoded_email)
-                #print(decoded_email)
-            #    emails.add(decoded_email)
-            #else: #accounts for their names? possible never gets their names
-            #    name.add(href)
-        
-        #for a_tag in soup.find_all('a', href=True):
-        #    #link_text = a_tag.get_text(strip=True)
-        #    href = a_tag['href']
-        #    #print(f"Text: {link_text} | URL: {href}")
-        #    if href.startswith('/cdn-cgi/l/email-protection'):
-        #        encoded_email = href.split('#')[-1]  # Get the encoded part after '#'
-        #        decoded_email = decodeEmail(encoded_email)
-                #print(decoded_email)
-        #        emails.add(decoded_email)
-        #    else: #accounts for their names? possible never gets their names
-        #        name.add(href)
 
         
         # Check if emails were found
@@ -153,24 +139,6 @@ if __name__ == '__main__':
                     print("Email DataFrame is empty.")
             else:
                 print("No emails or an error occurred.")
-
-            #dev test
-            testing = 0
-            if testing == 1:
-                print("The following is to be deleted, this is for testing, scraping <h_> tags in a website.")
-                headers = fetch_headers(test_url)
-                if headers:
-                    print("Headers success")
-                else:
-                    print("No headers")
-
-                print("Fetching all <a> tag contents...")
-                links = fetch_links(test_url)
-                if links:
-                    print("Links extracted successfully.")
-                else:
-                    print("No links or an error occurred.")
-
         except requests.exceptions.RequestException as e:
             print(f"Nope, Error: {e}")
     
@@ -184,11 +152,6 @@ if __name__ == '__main__':
         ]
         scrape_pages(urls_to_scrape)
 
-    if phase == 3:
-        # Usage
-        url = 'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/'
-        faculty_df = fetch_faculty_info(url)
-        print(faculty_df)
 
 
     #sample = '86f3e8eff0e3f4f5eff2fff4e3f5e3e7f4e5eee5e9e9f4e2efe8e7f2efe9e8e9e0e0efe5e3c6e2eaf5f3a8e3e2f3a8f6ee'
