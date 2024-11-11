@@ -27,11 +27,9 @@ def decodeEmail(e):
     return de
 
 def fetch_emails(url):
-    # Compile the email pattern
+    # Email pattern
     email_pattern = re.compile(r'[a-zA-Z0-9_.+-]+@dlsu.edu.ph')
-    #email_pattern = re.compile(r'^[a-zA-Z0-9_.-]*[@](dlsu.edu.ph)')
-    #email_pattern = re.compile(r'[a-zA-Z0-9_.+-]+@dlsu\.edu\.ph')
-    #email_pattern = re.compile(r'[A-Za-z0-9._%+-]+@dlsu.edu.ph') #just getting whatever email in the page
+
     # Send a GET request to the URL
     response = http.get(url)
 
@@ -44,34 +42,27 @@ def fetch_emails(url):
         faculty_info = []
         seen_emails = set()
 
-        # First, find emails in regular text (not encoded) (Not needed)
-        # emails.update(email_pattern.findall(soup.get_text()))
-
-        # Then, search for mailto: links and decode obfuscated emails
+        # Searching in wpb_wrapper, in faculty profile that each entry has
         for div in soup.find_all('div', class_="wpb_wrapper"):
-            
-            #href = div.find('a', href=lambda x: x and x.startswith('mailto'))
             name_tag = div.find('strong')
             role_tag = div.find('p')
-            email_tag = div.find('a', href=True) 
+            email_tag = div.find_all('a', href=True) 
             name_text = name_tag.get_text(strip=True) if name_tag else None
-            
-
-            if email_tag:
-                href = email_tag['href']
-                if href.startswith('/cdn-cgi/l/email-protection'):
-                    encoded_email = href.split('#')[-1]  # Get the encoded part after '#'
+            #print(f"Div: {div.prettify()}")
+            email_text = None
+            for a_tag in email_tag:
+                if '/cdn-cgi/l/email-protection' in a_tag['href']: #We know it's going to be encrypted but still, this checks for every a tag in the div, which should be 2 sometimes.
+                    # Handle encoded email link
+                    encoded_email = a_tag['href'].split('#')[-1]  # Get the encoded part after '#'
                     email_text = decodeEmail(encoded_email)
-                elif href.startswith('mailto:'):
-                    email_text = href[7:]  # Extract email after 'mailto:'
+                    break  # Stop after decoding
 
-            # Now remove the email embedded in the role text if it exists
+            # For Role Column
             if role_tag:
-                # Remove the <a> tag to exclude it from role_text
                 for a_tag in role_tag.find_all('a'):
-                    a_tag.decompose()  # Remove the <a> tag completely
+                    a_tag.decompose()  # Remove <a> tag 
                 for strong_tag in role_tag.find_all('strong'):
-                    strong_tag.decompose()
+                    strong_tag.decompose() # Remove <strong> tag
                 # Now get the role text without any <a> tags
                 role_text = role_tag.get_text(strip=True)
 
@@ -83,8 +74,6 @@ def fetch_emails(url):
                 })
                 seen_emails.add(email_text)
 
-        
-        # Check if emails were found
         df = pd.DataFrame(faculty_info)
         return df
     else:
@@ -120,7 +109,7 @@ def scrape_page(url):
             print(f"No emails found on {url}.")
 
 if __name__ == '__main__':
-    phase = 2 #1 for testing, 2 for threads kind of
+    phase = 2 #1 for manual, 2 for threads kind of
     if phase == 1:
         url = 'https://www.dlsu.edu.ph/'
         test_url = 'https://www.dlsu.edu.ph/research/offices/urco/'
@@ -151,10 +140,4 @@ if __name__ == '__main__':
         # Add more URLs here
         ]
         scrape_pages(urls_to_scrape)
-
-
-
-    #sample = '86f3e8eff0e3f4f5eff2fff4e3f5e3e7f4e5eee5e9e9f4e2efe8e7f2efe9e8e9e0e0efe5e3c6e2eaf5f3a8e3e2f3a8f6ee'
-    #test_decode_sample = decodeEmail(sample)
-    #print(test_decode_sample) #decoding works but need to find out how to extract it
 

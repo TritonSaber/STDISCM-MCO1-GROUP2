@@ -1,2 +1,1 @@
-
-                    'Name': name_text,
+and email_text 
