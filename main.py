@@ -26,71 +26,12 @@ def decodeEmail(e):
 
     return de
 
-def fetch_headers(url):
-    # Send a GET request to the URL
-    response = requests.get(url)
-
-    # Check if the request was successful
-    if response.status_code == 200:
-        # Parse the webpage content
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Dictionary to store headers
-        headers = {
-            "h1": [tag.get_text(strip=True) for tag in soup.find_all('h1')],
-            "h2": [tag.get_text(strip=True) for tag in soup.find_all('h2')],
-            "h3": [tag.get_text(strip=True) for tag in soup.find_all('h3')],
-            "h4": [tag.get_text(strip=True) for tag in soup.find_all('h4')],
-            "h5": [tag.get_text(strip=True) for tag in soup.find_all('h5')],
-            "h6": [tag.get_text(strip=True) for tag in soup.find_all('h6')],
-        }
-        
-        # Print headers found for inspection
-        for header_level, texts in headers.items():
-            print(f"{header_level} tags found:")
-            for text in texts:
-                print(f" - {text}")
-        return headers
-    else:
-        print("Failed to retrieve the webpage.")
-        return None
-
-def fetch_links(url):
-    # Send a GET request to the URL
-    response = requests.get(url)
-
-    # Check if the request was successful
-    if response.status_code == 200:
-        # Parse the webpage content
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # List to store link information
-        links = []
-        
-        # Find all <a> tags
-        for a_tag in soup.find_all('a', href=True):
-            # Get the text and href attribute of each <a> tag
-            link_text = a_tag.get_text(strip=True)
-            link_url = a_tag['href']
-            links.append((link_text, link_url))
-        
-        # Print links found for inspection
-        print("Links found on the page:")
-        for link_text, link_url in links:
-            print(f"Text: {link_text} | URL: {link_url}")
-        
-        return links
-    else:
-        print("Failed to retrieve the webpage.")
-        return None
-
 def fetch_emails(url):
     # Compile the email pattern
     #email_pattern = re.compile(r'[a-zA-Z0-9_.+-]+@dlsu.edu.ph')
     #email_pattern = re.compile(r'^[a-zA-Z0-9_.-]*[@](dlsu.edu.ph)')
     #email_pattern = re.compile(r'[a-zA-Z0-9_.+-]+@dlsu\.edu\.ph')
     email_pattern = re.compile(r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}') #just getting whatever email in the page
-
     # Send a GET request to the URL
     response = http.get(url)
 
@@ -99,35 +40,70 @@ def fetch_emails(url):
         # Parse the webpage content
         soup = BeautifulSoup(response.text, 'html.parser')
         
-         # Set to store emails found
-        emails = set()
+        # Set to store emails found
+        faculty_info = []
+        seen_emails = set()
 
-        # First, find emails in regular text (not encoded)
-        emails.update(email_pattern.findall(soup.get_text()))
+        # First, find emails in regular text (not encoded) (Not needed)
+        # emails.update(email_pattern.findall(soup.get_text()))
 
         # Then, search for mailto: links and decode obfuscated emails
-        for a_tag in soup.find_all('a', href=True):
-            #link_text = a_tag.get_text(strip=True)
-            href = a_tag['href']
-            #print(f"Text: {link_text} | URL: {href}")
-            if href.startswith('/cdn-cgi/l/email-protection'):
-                encoded_email = href.split('#')[-1]  # Get the encoded part after '#'
-                decoded_email = decodeEmail(encoded_email)
+        for div in soup.find_all('div', class_="wpb_wrapper"):
+            
+            #href = div.find('a', href=lambda x: x and x.startswith('mailto'))
+            name_tag = div.find('strong')
+            role_tag = div.find('p')
+            email_tag = div.find('a', href=True) 
+
+            name_text = name_tag.get_text(strip=True) if name_tag else None
+            role_text = role_tag.get_text(strip=True).replace(name_text, '').strip('" ') if role_tag and name_tag else None
+            
+
+            if email_tag:
+                href = email_tag['href']
+                if href.startswith('/cdn-cgi/l/email-protection'):
+                    encoded_email = href.split('#')[-1]  # Get the encoded part after '#'
+                    email_text = decodeEmail(encoded_email)
+                elif href.startswith('mailto:'):
+                    email_text = href[7:]  # Extract email after 'mailto:'
+                else:
+                    email_text = None
+
+            if name_text and email_text not in seen_emails:
+                faculty_info.append({
+                    'Name': name_text,
+                    'Role': role_text,
+                    'Email': email_text
+                })
+                seen_emails.add(email_text)
+
+            #if href.startswith('/cdn-cgi/l/email-protection'):
+            ##    encoded_email = href.split('#')[-1]  # Get the encoded part after '#'
+            #   decoded_email = decodeEmail(encoded_email)
                 #print(decoded_email)
-                emails.add(decoded_email)
+            #    emails.add(decoded_email)
+            #else: #accounts for their names? possible never gets their names
+            #    name.add(href)
+        
+        #for a_tag in soup.find_all('a', href=True):
+        #    #link_text = a_tag.get_text(strip=True)
+        #    href = a_tag['href']
+        #    #print(f"Text: {link_text} | URL: {href}")
+        #    if href.startswith('/cdn-cgi/l/email-protection'):
+        #        encoded_email = href.split('#')[-1]  # Get the encoded part after '#'
+        #        decoded_email = decodeEmail(encoded_email)
+                #print(decoded_email)
+        #        emails.add(decoded_email)
+        #    else: #accounts for their names? possible never gets their names
+        #        name.add(href)
+
         
         # Check if emails were found
-        if emails:
-            # Store emails in a DataFrame
-            email_df = pd.DataFrame(list(emails), columns=["Email"])
-            return email_df
-        else:
-            #print("No emails found.")
-            return None
+        df = pd.DataFrame(faculty_info)
+        return df
     else:
         print("Failed to retrieve the webpage.")
         return None
-
 
 # Function to scrape multiple pages concurrently (IDK YET)
 def scrape_pages(urls):
@@ -200,11 +176,19 @@ if __name__ == '__main__':
     
     if phase == 2:
         urls_to_scrape = [
-        'https://www.dlsu.edu.ph/',
-        'https://www.dlsu.edu.ph/research/offices/urco/',
+        #'https://www.dlsu.edu.ph/',
+        #'https://www.dlsu.edu.ph/research/offices/urco/',
+        #'https://www.dlsu.edu.ph/offices/registrar/',
+        'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/',
         # Add more URLs here
         ]
         scrape_pages(urls_to_scrape)
+
+    if phase == 3:
+        # Usage
+        url = 'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/'
+        faculty_df = fetch_faculty_info(url)
+        print(faculty_df)
 
 
     #sample = '86f3e8eff0e3f4f5eff2fff4e3f5e3e7f4e5eee5e9e9f4e2efe8e7f2efe9e8e9e0e0efe5e3c6e2eaf5f3a8e3e2f3a8f6ee'
