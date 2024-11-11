@@ -1,0 +1,14 @@
+Scrape Statistics
+====================
+URL: https://www.dlsu.edu.ph/research/offices/urco/
+  Pages Scraped: 1
+  Emails Found: 1
+====================
+URL: https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/
+  Pages Scraped: 1
+  Emails Found: 30
+====================
+URL: https://www.dlsu.edu.ph/offices/registrar/
+  Pages Scraped: 1
+  Emails Found: 1
+====================

@@ -15,6 +15,7 @@ data_lock = threading.Lock()
 all_faculty_info = []
 
 thread_times = {}
+statistics = {}
 
 # Functionalities to be done:
 # Thread/Process Used
@@ -35,6 +36,7 @@ def decodeEmail(e):
 
 def fetch_emails(url):
     start_time = time.time()
+    emails_found = 0
     # Email pattern
     #email_pattern = re.compile(r'[a-zA-Z0-9_.+-]+@dlsu.edu.ph')
 
@@ -94,10 +96,16 @@ def fetch_emails(url):
                         'Source': source_url
                     })
                     seen_emails.add(email_text)
+                    emails_found += 1
 
         end_time = time.time()
         thread_duration = end_time - start_time  # Time taken for the thread
         thread_times[url] = thread_duration
+
+        statistics[url] ={
+            'Pages Scraped': 1, #cause we're still manually putting urls in and not traversing them atm
+            'Emails Found': emails_found
+        }
 
         return faculty_info
     else:
@@ -123,6 +131,8 @@ def scrape_pages(urls):
             print(f"{url}: {duration:.2f} seconds")
         else:
             print(f"{url}: Failed to scrape or skipped")
+    
+    write_statistics_to_file()
 
 #    save_to_csv()
 
@@ -163,8 +173,20 @@ def scrape_page(url):
     else:
         print(f"No data found for {url}.")
 
+# Function to write statistics to a text file
+def write_statistics_to_file():
+    with open('scrape_statistics.txt', 'w', encoding='utf-8') as f:
+        f.write("Scrape Statistics\n")
+        f.write("====================\n")
+        for url, stats in statistics.items():
+            f.write(f"URL: {url}\n")
+            f.write(f"  Pages Scraped: {stats['Pages Scraped']}\n")
+            f.write(f"  Emails Found: {stats['Emails Found']}\n")
+            f.write("====================\n")
+
+
 if __name__ == '__main__':
-    phase = 2 #1 for manual, 2 for threads kind of
+    phase = 2 #1 for manual(outdated kinda), 2 for threads kind of
     if phase == 1:
         url = 'https://www.dlsu.edu.ph/'
         test_url = 'https://www.dlsu.edu.ph/research/offices/urco/'
