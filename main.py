@@ -6,6 +6,7 @@ import requests
 import bs4
 from bs4 import BeautifulSoup
 import csv
+from urllib.parse import urljoin
 
 http = requests.Session()
 
@@ -28,13 +29,19 @@ seen_emails = set()
 
 def decodeEmail(e):
     #https://stackoverflow.com/questions/36911296/scraping-of-protected-email cause cloudfare cool
-    de = ""
-    k = int(e[:2], 16)
+    try:
+        if not e:
+            return None
+        de = ""
+        k = int(e[:2], 16)
 
-    for i in range(2, len(e)-1, 2):
-        de += chr(int(e[i:i+2], 16)^k)
+        for i in range(2, len(e)-1, 2):
+            de += chr(int(e[i:i+2], 16)^k)
 
-    return de
+        return de
+    except ValueError as ve:
+        print(f"Error decoding email: {ve} - Invalid email format: {e}")
+        return None
 
 def fetch_emails(url, start_time, time_limit):
     #Check for time
@@ -93,7 +100,7 @@ def fetch_emails(url, start_time, time_limit):
 
             source_url = url
 
-            if name_text and email_text not in seen_emails:
+            if email_text not in seen_emails:
                 if email_text is not None:
                     faculty_info.append({
                         'Name': name_text,
@@ -108,10 +115,14 @@ def fetch_emails(url, start_time, time_limit):
         thread_duration = end_time - start_time  # Time taken for the thread
         thread_times[url] = thread_duration
 
-        statistics[url] ={
-            'Pages Scraped': 1, #cause we're still manually putting urls in and not traversing them atm
-            'Emails Found': emails_found
-        }
+        if url in statistics:
+            statistics[url]['Pages Scraped'] += 1
+            statistics[url]['Emails Found'] += emails_found
+        else:
+            statistics[url] = {
+                'Pages Scraped': 1,  # First page visit for this URL #cause we're still manually putting urls in and not traversing them atm
+                'Emails Found': emails_found
+            }
 
         return faculty_info, False
     else:
@@ -127,6 +138,10 @@ def scrape_pages(urls, time_limit):
     start_time = time.time()
 
     for url in urls:
+        elapsed_time = time.time() - start_time
+        if elapsed_time > time_limit * 60:  # Ensure comparison is in seconds
+            print("Time limit reached in main scrape loop.")
+            break
         thread = threading.Thread(target=scrape_page, args=(url, start_time, time_limit))
         threads.append(thread)
         thread.start()
@@ -142,24 +157,6 @@ def scrape_pages(urls, time_limit):
             print(f"{url}: Failed to scrape or skipped")
     
     write_statistics_to_file()
-
-#    save_to_csv()
-
-#def save_data_from_thread(url):
-#    faculty_info = fetch_emails(url)
-#
-#    # Ensure thread-safe appending of data
-#    with data_lock:
-#        all_faculty_info.extend(faculty_info)
-
-#def save_to_csv():
-    # Convert collected data to a DataFrame and save it to a CSV file
-#    if all_faculty_info:
-#        df = pd.DataFrame(all_faculty_info)
-#        df.to_csv('dlsu_emails.csv', index=False, encoding='utf-8')
-#        print("Data saved to 'dlsu_emails.csv'")
-#    else:
-#        print("No data to save.")
 
 def scrape_page(url, start_time, time_limit):
     # Scrape the page and fetch emails
@@ -185,9 +182,10 @@ def scrape_page(url, start_time, time_limit):
         print(f"Data for {url} saved.")
     else:
         print(f"No data found for {url}.")
-
 # Function to write statistics to a text file
 def write_statistics_to_file():
+    total_pages = sum(stats['Pages Scraped'] for stats in statistics.values())
+    total_emails = sum(stats['Emails Found'] for stats in statistics.values())
     total_time_elapsed = time.time() - start_time_total
     remaining_time = (time_limit * 60) - total_time_elapsed
     remaining_time = max(remaining_time, 0)  # Avoid negative remaining time
@@ -207,15 +205,56 @@ def write_statistics_to_file():
                 f.write(f"  Time Taken: Failed to scrape or skipped\n")
 
             f.write("====================\n")
+            f.write("Overall Statistics:\n")
+        #f.write(f"Base URL: {base_url}\n")
+        f.write(f"Total Pages Scraped: {total_pages}\n")
+        f.write(f"Total Emails Found: {total_emails}\n")
         f.write(f"Total Time Elapsed: {total_time_elapsed:.2f} seconds\n")
         f.write(f"Remaining Time: {remaining_time:.2f} seconds\n")
         f.write(f"Threads Used: {len(thread_times)}\n")
 
+def get_internal_links(url, visited=None, depth=0, max_depth=10): #3 does not reach yet, 5, 10... kinda hard
+    if visited is None:
+        visited=set()
+
+    try:
+        if url in visited or depth > max_depth:
+            return visited
+
+        # Send a GET request to the URL
+        response = http.get(url)
+        response.raise_for_status()  # Raise an exception for bad responses (4xx/5xx)
+
+        soup = BeautifulSoup(response.text, 'html.parser')
+
+        # Find all links in the page
+        links = soup.find_all('a', href=True) + soup.find_all('link', href=True)
+
+        internal_links = set()
+
+        # Filter the links to only include those that belong to the domain
+        for link in links:
+            href = link['href']
+            if href.endswith('.pdf') or href.endswith('.css') or href.endswith('.png') or href.endswith('.io'): # we hate pdfs
+                continue
+            if href.startswith('/') or href.startswith('https://www.dlsu.edu.ph'):
+                # Resolve relative links
+                if href.startswith('/'):
+                    href = 'https://www.dlsu.edu.ph' + href
+                if href not in visited:
+                    visited.add(href)
+                    internal_links.add(href)
+                    get_internal_links(href, visited, depth+1, max_depth)
+
+        return visited
+    except requests.exceptions.RequestException as e:
+        print(f"Failed to retrieve or parse {url}: {e}")
+        return visited
 
 if __name__ == '__main__':
     time_limit = int(input("Enter the maximum number of minutes the program can run: "))
     start_time_total = time.time()
-    phase = 2 #1 for manual(outdated kinda), 2 for threads kind of
+    phase = 2 #1 for manual(outdated kinda), 2 for threads kind of, 3 for automatic crawling: Also these are all hardcoded, so dev tests- make sure to set to right phase when passing
     if phase == 1:
         url = 'https://www.dlsu.edu.ph/'
         test_url = 'https://www.dlsu.edu.ph/research/offices/urco/'
@@ -247,3 +286,12 @@ if __name__ == '__main__':
         ]
         scrape_pages(urls_to_scrape, time_limit)
 
+    if phase == 3:
+        #base_url = 'https://www.dlsu.edu.ph/'
+        base_url = 'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/'
+        urls_to_scrape = get_internal_links(base_url)
+        scrape_pages(urls_to_scrape, time_limit)
+
+        # Checking what urls can be gotten
+        #for link in urls_to_scrape:
+        #    print(link)
