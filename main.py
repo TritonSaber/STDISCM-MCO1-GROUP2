@@ -1,12 +1,10 @@
 import time
 import threading
 import pandas as pd
-import re
 import requests
 import bs4
 from bs4 import BeautifulSoup
 import csv
-from urllib.parse import urljoin
 
 http = requests.Session()
 
