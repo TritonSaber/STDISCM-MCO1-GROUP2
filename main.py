@@ -1,12 +1,8 @@
 import time
 import threading
-import pandas as pd
-import re
 import requests
-import bs4
 from bs4 import BeautifulSoup
 import csv
-from urllib.parse import urljoin
 
 http = requests.Session()
 
@@ -23,7 +19,7 @@ seen_emails = set()
 # Remember to delete the faculty_emails.txt cause itll append forever and idk how to refresh it without breaking. Statistics file is good though
 
 def decodeEmail(e):
-    #https://stackoverflow.com/questions/36911296/scraping-of-protected-email cause cloudfare cool
+    #https://stackoverflow.com/questions/36911296/scraping-of-protected-email
     try:
         if not e:
             return None
@@ -46,8 +42,6 @@ def fetch_emails(url, start_time, time_limit):
         return [], True  # Return True to indicate time limit exceeded
 
     emails_found = 0
-    # Email pattern
-    #email_pattern = re.compile(r'[a-zA-Z0-9_.+-]+@dlsu.edu.ph')
 
     # Send a GET request to the URL
     response = http.get(url)
@@ -200,7 +194,7 @@ def write_statistics_to_file():
                 f.write(f"  Time Taken: Failed to scrape or skipped\n")
 
             f.write("====================\n")
-            f.write("Overall Statistics:\n")
+        f.write("Overall Statistics:\n")
         f.write(f"Base URL: {base_url}\n")
         f.write(f"Total Pages Scraped: {total_pages}\n")
         f.write(f"Total Emails Found: {total_emails}\n")
@@ -277,19 +271,15 @@ if __name__ == '__main__':
     
     if phase == 2:
         urls_to_scrape = [
-        #'https://www.dlsu.edu.ph/',
         'https://www.dlsu.edu.ph/research/offices/urco/',
         'https://www.dlsu.edu.ph/offices/registrar/',
         'https://www.dlsu.edu.ph/colleges/cla/academic-departments/communication/faculty/',
         #'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/', 
         base_url,
-        # Add more URLs here if want
         ]
         scrape_pages(urls_to_scrape, time_limit)
 
     if phase == 3:
-        #base_url = 'https://www.dlsu.edu.ph/'
-        #base_url = 'https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/'
         urls_to_scrape = get_internal_links(base_url)
         scrape_pages(urls_to_scrape, time_limit)
 
