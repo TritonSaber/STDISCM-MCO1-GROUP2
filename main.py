@@ -3,6 +3,7 @@ import threading
 import requests
 from bs4 import BeautifulSoup
 import csv
+from tasks import app
 
 http = requests.Session()
 
@@ -120,32 +121,16 @@ def fetch_emails(url, start_time, time_limit):
         return None, False
 
 # Function to scrape multiple pages concurrently (IDK YET)
-def scrape_pages(urls, time_limit):
-    threads = []
+def scrape_pages(urls_to_scrape, time_limit):
+    results = app.send_multiple(
+        tasks=[scrape_page.s(url, time_limit) for url in urls_to_scrape],
+        async=True
+    )
+    # Collect results and statistics from worker responses
+    # (explained in the next step)
 
-    # Get the start time to monitor elapsed time
-    start_time = time.time()
-
-    for url in urls:
-        elapsed_time = time.time() - start_time
-        if elapsed_time > time_limit * 60:  # Ensure comparison is in seconds
-            print("Time limit reached in main scrape loop.")
-            break
-        thread = threading.Thread(target=scrape_page, args=(url, start_time, time_limit))
-        threads.append(thread)
-        thread.start()
-
-    for thread in threads:
-        thread.join()
-
-    print("Thread durations:")
-    for url, duration in thread_times.items():
-        if duration is not None:
-            print(f"{url}: {duration:.2f} seconds")
-        else:
-            print(f"{url}: Failed to scrape or skipped")
-    
-    write_statistics_to_file()
+    # Update your statistics writing logic to handle collected data
+    write_statistics_to_file.delay(collected_data)
 
 def scrape_page(url, start_time, time_limit):
     # Scrape the page and fetch emails
@@ -171,6 +156,7 @@ def scrape_page(url, start_time, time_limit):
         print(f"Data for {url} saved.")
     else:
         print(f"No data found for {url}.")
+
 # Function to write statistics to a text file
 def write_statistics_to_file():
     total_pages = sum(stats['Pages Scraped'] for stats in statistics.values())

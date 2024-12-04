@@ -1,21 +1,18 @@
-version: "3"
+version: '3.8'
+
 services:
   rabbitmq:
-    image: rabbitmq:3-management
+    image: rabbitmq:3.9-management-alpine
     ports:
-      - "5672:5672"
-      - "15672:15672"
-
-  producer:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    depends_on:
-      - rabbitmq
+      - 5672:5672
+      - 15672:15672  # Optional for RabbitMQ management UI access
 
   worker:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
+    command: celery -A tasks worker -l info
     depends_on:
       - rabbitmq
+
+volumes:
+  # Define a volume to share data between containers (optional for statistics)
+  # shared_data:/app/data
