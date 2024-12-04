@@ -1,0 +1,6 @@
+Scrape Statistics
+====================
+URL: https://www.dlsu.edu.ph/offices/registrar/
+  Pages Scraped: 1
+  Emails Found: 1
+====================
