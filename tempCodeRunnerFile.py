@@ -1,1 +1,0 @@
-https://www.dlsu.edu.ph/colleges/cla/academic-departments/political-science/faculty-profile/
