@@ -1,6 +1,6 @@
 # Running the Code
 
-1. Download docker desktop at https://www.docker.com/ (recommended during installation will suffice)
+1. Download docker desktop at https://www.docker.com/ (recommended settings during installation will suffice)
 
 2. Install RabbitMQ in docker
 
@@ -11,7 +11,7 @@
 
 3. set up docker cluster
 
-```docker-compose up --scale worker=<num_of_workers```
+```docker-compose up --scale worker=<num_of_workers>```
 
 4. on another terminal
 
